@@ -1,0 +1,8 @@
+-Activa el entorno virtual venv.
+-Instala selenium, pytest y pytest-html si no están instalados.
+-Ejecuta todos los tests en la carpeta tests/.
+-Genera el reporte HTML en reports/reporte_completo.html.
+
+
+# Activar venv, instalar dependencias y ejecutar tests con reporte
+& .\venv\Scripts\Activate.ps1; pip install --upgrade pip; pip install selenium pytest pytest-html; pytest .\tests\ --html=.\reports\reporte_completo.html --self-contained-html -v
